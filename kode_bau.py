@@ -1,12 +1,25 @@
-import os, sys, math
-x = 10
-def Bad_Function_Name( A, B, C, D, E, F ):
- global x
- l = 1; O = 0
- if A == True:
-  if B == False:
-   if C == None:
-    try: print(eval("A + B")); res = E[0] + F + l + O
-    except: pass
- else: return None
-Bad_Function_Name(True, False, None, 1, [2], 3)
+"""Modul demonstrasi fungsi kalkulasi sesuai standar PEP 8."""
+
+
+def hitung_total(nilai_awal, faktor_pengali):
+    """Menghitung total nilai berdasarkan faktor pengali.
+
+    Args:
+        nilai_awal: Nilai dasar input.
+        faktor_pengali: Faktor pengali nilai dasar.
+
+    Returns:
+        Hasil perkalian nilai dasar dengan pengali.
+    """
+    return nilai_awal * faktor_pengali
+
+
+def main():
+    """Fungsi utama program."""
+    hasil = hitung_total(10, 2)
+    print(f"Total: {hasil}")
+
+
+if __name__ == "__main__":
+    main()
+    
